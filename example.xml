@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @package   plg_radicalmicro_example
+  ~ @version   1.0.0
+  ~ @author    Dmitriy Vasyukov - https://fictionlabs.ru
+  ~ @copyright Copyright (c) 2022 Fictionlabs. All rights reserved.
+  ~ @license   GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+  ~ @link      https://fictionlabs.ru/
+  -->
+
+<extension type="plugin" version="3.9" group="radicalmicro" method="upgrade">
+    <name>PLG_RADICALMICRO_EXAMPLE</name>
+    <creationDate>April 2022</creationDate>
+    <author>Dmitriy Vasyukov</author>
+    <copyright>Copyright (C) 2005 - 2022 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>info@fictionlabs.ru</authorEmail>
+    <authorUrl>https://fictionlabs.ru</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_RADICALMICRO_EXAMPLE_DESCRIPTION</description>
+    <scriptfile>script.php</scriptfile>
+
+    <!-- Language files -->
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_radicalmicro_example.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_radicalmicro_example.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_radicalmicro_example.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_radicalmicro_example.sys.ini</language>
+    </languages>
+
+    <!-- Plugin files -->
+    <files>
+        <filename plugin="example">example.php</filename>
+        <folder>language</folder>
+        <folder>src</folder>
+    </files>
+
+    <!-- Config parameter -->
+    <config>
+        <fields name="params">
+            <!-- Your parameters here -->
+        </fields>
+    </config>
+</extension>
